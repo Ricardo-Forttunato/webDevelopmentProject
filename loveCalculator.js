@@ -1,6 +1,10 @@
-var nameLover = prompt("Input your name. \n");
-var nameCrush = prompt("Input your crush name. \n");
+//prompt("Input your name. \n");
+//prompt("Input your crush name. \n");
 
-var loveScore = Math.random() * 100 + 1;
+var loveScore = Math.floor(Math.random() * 100 + 1);
 
-console.log("Your love score is " + Math.floor(loveScore) + "%");
+if (loveScore > 70){
+    console.log("Your love score is " + loveScore + "%" + " You love each other like Kanye loves Kanye.");
+} else{
+    console.log("Your love score is " + loveScore + "%");
+}
